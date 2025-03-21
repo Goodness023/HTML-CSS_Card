@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS_Card</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: goldenrod;
+    }
+
+    .card {
+        width: 30%;
+        height: 80vh;
+        background-color: #ffffff;
+        margin: 3.5rem auto;
+        border: 2px solid black;
+        border-radius: 20px;
+        box-shadow: 4px 4px;
+    }
+
+    .hero {
+        background-image: url("https://img.freepik.com/free-photo/top-view-black-frame-with-plant_23-2148643780.jpg?uid=R185329207&ga=GA1.1.78629320.1731355655&semt=ais_hybrid");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 200px;
+        margin: 1.5rem auto;
+        border-radius: 10px;
+    }
+
+    .card-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    button {
+        padding: 10px 18px;
+        background-color: rgba(255, 217, 0, 0.945);
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: .6;
+    }
+
+    h6 {
+        padding: 1rem 0 1.1rem;
+        font-size: 17.5px;
+        color: grey;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    p {
+        padding: 10px 0;
+        font-size: 19px;
+        color: rgba(0, 0, 0, 0.521);
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .image-container {
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+
+    h5 {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        align-content: center;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    @media (max-width:768px){
+        .card {
+        width: 90%;
+        height: 80vh;
+    }
+    }
+
+</style>
+
+<body>
+
+    <div class="card">
+        <div class="hero"></div>
+
+        <div class="card-content">
+            <button>Learning</button>
+            <h6>published 21 Dec 2023</h6>
+            <h2>HTML & CSS foundations</h2>
+            <p>These languages are the backbone of every websites defining, structures, content, and presentation.</p>
+
+            <div class="image-container">
+                <img src="./image/portrait-african-american-man.jpg" alt="img">
+                <div>
+                    <h5>Greg Hooper</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
